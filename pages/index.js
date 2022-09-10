@@ -138,13 +138,13 @@ export default function Home() {
       </Head>
       <div className='search-bar'>
         <div className='content-title'>
-          <p>Please enter product code in the search box</p>
+          <p>Insira o código do produto na caixa de pesquisa</p>
         </div>
         <div className='input-content'>
           <input
             className='input-search'
             type='text'
-            placeholder='Enter code here, example: 3'
+            placeholder='Digite o código aqui, exemplo: 3'
             onChange={inputHandler}
             value={inputSearch}
             autoFocus
@@ -184,43 +184,34 @@ export default function Home() {
                 <div className='product-text'>
                   {item.sameproduct && <h6 className='mt-5'>Similar products</h6>}
                   <p>
-                    Code: <span className='code'>{item.name}</span>
+                    código: <span className='code'>{item.name}</span>
                   </p>
-                  <h5 className='north-america'>GLOBAL</h5>
-                  <a href={item.usalink} target='_blank' className='custom-button'>
-                    USA - Buy Now on Amazon
+                  <a href={item.aliexpress} target='_blank' className='custom-button aliexpress'>
+                    Compre agora no Aliexpress
                   </a>
-                  {/* <a href='https://bit.ly/Kawaii-Plushiess' target='_blank' className='custom-button'>
-                    Kawaii Plushies
-                  </a> */}
-                  {/* {item.aliexpress && (
-                    <a href={item.aliexpress} target='_blank' className='custom-button aliexpress'>
-                      Buy Now on Aliexpress
-                    </a>
-                  )} */}
-                  <h5 className='north-america'>SELECT COUNTRY</h5>
-                  <div className='selected-country'>
-                    <select
-                      name=''
-                      className='custom-selected'
-                      value={country}
-                      id='countries'
-                      onChange={handleChangeSelected}
-                    >
-                      <option value='amazon.com' disabled>
-                        Select
-                      </option>
 
-                      {COUNTRIES.map((item, index) => (
-                        <option value={item.area} key={index}>
-                          {item.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <a href={replaceArea(item.usalink, country)} target='_blank' className='custom-button'>
-                    {nameCountry} - Buy Now on Amazon
-                  </a>
+                  {/* <h5 className='north-america'>SELECT COUNTRY</h5>
+                      <div className='selected-country'>
+                        <select
+                          name=''
+                          className='custom-selected'
+                          value={country}
+                          id='countries'
+                          onChange={handleChangeSelected}
+                        >
+                          <option value='amazon.com' disabled>
+                            Select
+                          </option>
+                          {COUNTRIES.map((item, index) => (
+                            <option value={item.area} key={index}>
+                              {item.name}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      <a href={replaceArea(item.usalink, country)} target='_blank' className='custom-button'>
+                        {nameCountry} - Buy Now on Amazon
+                      </a> */}
                 </div>
               </div>
             ))}
@@ -252,21 +243,13 @@ export default function Home() {
                     <div className='product-text'>
                       {item.sameproduct && <h6 className='mt-5'>Similar products</h6>}
                       <p>
-                        Code: <span className='code'>{item.name}</span>
+                        código: <span className='code'>{item.name}</span>
                       </p>
-                      <h5 className='north-america'>GLOBAL</h5>
-                      <a href={item.usalink} target='_blank' className='custom-button'>
-                        USA - Buy Now on Amazon
+                      <a href={item.aliexpress} target='_blank' className='custom-button aliexpress'>
+                        Compre agora no Aliexpress
                       </a>
-                      {/* <a href='https://bit.ly/Kawaii-Plushiess' target='_blank' className='custom-button'>
-                        Kawaii Plushies
-                      </a> */}
-                      {/* {item.aliexpress && (
-                        <a href={item.aliexpress} target='_blank' className='custom-button aliexpress'>
-                          Buy Now on Aliexpress
-                        </a>
-                      )} */}
-                      <h5 className='north-america'>SELECT COUNTRY</h5>
+
+                      {/* <h5 className='north-america'>SELECT COUNTRY</h5>
                       <div className='selected-country'>
                         <select
                           name=''
@@ -287,7 +270,7 @@ export default function Home() {
                       </div>
                       <a href={replaceArea(item.usalink, country)} target='_blank' className='custom-button'>
                         {nameCountry} - Buy Now on Amazon
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 ))}

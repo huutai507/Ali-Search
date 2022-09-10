@@ -1,5 +1,15 @@
 export const data = [
   {
+    name: '1',
+    usalink: '',
+    aliexpress: '',
+    imglink: 'https://m.media-amazon.com/images/I/31nL7xWrRvL._SL350_.jpg',
+    shortlink: ''
+  }
+];
+
+export const data1 = [
+  {
     name: '207',
     usalink:
       'https://www.amazon.com/s?k=7+in+1+Cleaning+Kit&crid=11ITAM9ETAU3F&sprefix=%2Caps%2C1084&linkCode=ll2&tag=taiphantmt-20&linkId=d29139f46a6c4c193c680ed9f9fe5dd1&language=en_US&ref_=as_li_ss_tl',
